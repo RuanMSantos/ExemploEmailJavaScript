@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function MyClick(){
+            let nome = document.getElementById("nome").value;
+            let sobrenome = document.getElementById("sobrenome").value;
+            alert("Seu email seria: " + nome + "." + sobrenome + "@etec.sp.gov.br");
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <form>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome">
+            <label for="sobrenome">Sobrenome</label>
+            <input type="text" id="sobrenome" name="sobrenome">
+            <input type="button" name="enviar" id="enviar" value="Enviar" onclick="MyClick()">
+        </form>        
+    </div>
+</html>
